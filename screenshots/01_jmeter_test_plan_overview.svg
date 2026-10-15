@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%" style="background:#2b2b2b; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="jmeterTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3c3f41"/>
+      <stop offset="100%" stop-color="#313335"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Title Bar -->
+  <rect width="1000" height="38" fill="url(#jmeterTitle)"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="19" r="6" fill="#27c93f"/>
+
+  <!-- JMeter Logo / Feather Icon -->
+  <g transform="translate(85, 9)">
+    <path d="M0,18 C4,10 12,2 20,0 C16,8 14,14 10,20 Z" fill="#D22128"/>
+    <path d="M6,16 C12,10 16,6 22,2 C18,10 14,16 8,20 Z" fill="#F39C12"/>
+    <text x="28" y="15" fill="#bbbbbb" font-size="12" font-weight="bold">Apache JMeter 5.6.3 - BlazeDemo Performance &amp; Load Testing Suite.jmx</text>
+  </g>
+
+  <!-- Toolbar -->
+  <rect y="38" width="1000" height="36" fill="#3c3f41" stroke="#4e5254" stroke-width="0.5"/>
+  <g transform="translate(20, 46)">
+    <!-- Play button (green triangle) -->
+    <circle cx="10" cy="10" r="10" fill="#2ecc71"/>
+    <polygon points="7,5 15,10 7,15" fill="#ffffff"/>
+    <text x="26" y="14" fill="#ffffff" font-size="11" font-weight="600">Start (Ctrl+R)</text>
+
+    <!-- Stop button (red square) -->
+    <g transform="translate(110, 0)">
+      <circle cx="10" cy="10" r="10" fill="#e74c3c"/>
+      <rect x="6" y="6" width="8" height="8" fill="#ffffff"/>
+      <text x="26" y="14" fill="#aaaaaa" font-size="11">Stop</text>
+    </g>
+
+    <!-- Clear / Broom button -->
+    <g transform="translate(180, 0)">
+      <rect width="65" height="20" rx="3" fill="#4e5254"/>
+      <text x="8" y="14" fill="#cccccc" font-size="11">🧹 Clear All</text>
+    </g>
+
+    <!-- Engine Status Indicator -->
+    <g transform="translate(740, 2)">
+      <rect width="220" height="18" rx="3" fill="#2b2b2b"/>
+      <circle cx="12" cy="9" r="4" fill="#2ecc71"/>
+      <text x="24" y="13" fill="#2ecc71" font-size="11" font-weight="bold">Engine: Ready (0/50 threads)</text>
+    </g>
+  </g>
+
+  <!-- Main Work Area -->
+  <!-- Left Side: Test Plan Tree -->
+  <rect x="0" y="74" width="330" height="546" fill="#313335" stroke="#4e5254" stroke-width="0.5"/>
+  <rect x="0" y="74" width="330" height="30" fill="#3c3f41"/>
+  <text x="14" y="94" fill="#ffffff" font-size="12" font-weight="bold">TEST PLAN TREE</text>
+
+  <!-- Tree Items -->
+  <g transform="translate(14, 118)">
+    <!-- Root Test Plan -->
+    <text x="0" y="14" fill="#e67e22" font-size="13">📋</text>
+    <text x="22" y="14" fill="#ffffff" font-size="12" font-weight="bold">Test Plan: BlazeDemo Performance Suite</text>
+
+    <!-- Config Elements -->
+    <text x="18" y="38" fill="#3498db" font-size="12">⚙️ HTTP Request Defaults</text>
+    <text x="18" y="58" fill="#3498db" font-size="12">📑 HTTP Header Manager</text>
+    <text x="18" y="78" fill="#3498db" font-size="12">🍪 HTTP Cookie Manager</text>
+    <text x="18" y="98" fill="#9b59b6" font-size="12">📂 CSV Flight Data Set Config</text>
+    <text x="18" y="118" fill="#f1c40f" font-size="12">⏱️ Think Time (Gaussian Timer 300-500ms)</text>
+    <text x="18" y="138" fill="#2ecc71" font-size="12">✅ Global Response Assertion (200 OK)</text>
+    <text x="18" y="158" fill="#2ecc71" font-size="12">⏱️ Duration Assertion (&lt; 1500ms)</text>
+
+    <!-- Thread Groups -->
+    <text x="18" y="188" fill="#e67e22" font-size="12">👥 01 - Smoke Test (1 Thread)</text>
+    
+    <text x="18" y="214" fill="#e67e22" font-size="12" font-weight="bold">👥 02 - Load Testing (50 Users - 5 Loops)</text>
+    <!-- Child Samplers under Load Testing -->
+    <text x="36" y="236" fill="#1abc9c" font-size="11">🌐 TX - Flight Booking Journey</text>
+    <text x="54" y="256" fill="#2ecc71" font-size="11">🔹 HTTP 01 - Get Home Page</text>
+    <text x="54" y="276" fill="#2ecc71" font-size="11">🔹 HTTP 02 - Reserve Flight (Search)</text>
+    <text x="54" y="296" fill="#2ecc71" font-size="11">🔹 HTTP 03 - Select Flight Purchase</text>
+    <text x="54" y="316" fill="#2ecc71" font-size="11">🔹 HTTP 04 - Confirm Booking</text>
+
+    <!-- Listeners -->
+    <text x="18" y="348" fill="#e74c3c" font-size="12">📊 View Results Tree</text>
+    <text x="18" y="368" fill="#e74c3c" font-size="12">📈 Summary Report</text>
+    <text x="18" y="388" fill="#e74c3c" font-size="12" font-weight="bold">📋 Aggregate Report (Metrics)</text>
+    <text x="18" y="408" fill="#e74c3c" font-size="12">📉 Graph Results (Throughput &amp; Latency)</text>
+  </g>
+
+  <!-- Right Side: Test Plan Details Panel -->
+  <rect x="330" y="74" width="670" height="546" fill="#2b2b2b"/>
+  
+  <g transform="translate(360, 100)">
+    <text x="0" y="20" fill="#ffffff" font-size="18" font-weight="bold">Test Plan: BlazeDemo Performance &amp; Load Testing Suite</text>
+    <text x="0" y="45" fill="#aaaaaa" font-size="12">Cấu hình kịch bản kiểm thử hiệu năng tổng thể, biến môi trường và quản lý phiên làm việc.</text>
+
+    <!-- Info Card -->
+    <rect x="0" y="65" width="610" height="110" rx="4" fill="#3c3f41" stroke="#4e5254" stroke-width="0.8"/>
+    <text x="16" y="92" fill="#e67e22" font-size="12" font-weight="bold">🎯 MỤC TIÊU KIỂM THỬ:</text>
+    <text x="16" y="112" fill="#cccccc" font-size="11">• Đánh giá khả năng chịu tải của hệ thống đặt vé máy bay BlazeDemo khi có 50 người dùng đồng thời.</text>
+    <text x="16" y="130" fill="#cccccc" font-size="11">• Đo lường thông lượng (Throughput), thời gian đáp ứng trung bình (Average Response Time).</text>
+    <text x="16" y="148" fill="#cccccc" font-size="11">• Xác định tỷ lệ lỗi (Error Rate) và tính ổn định của hệ thống theo đường cong phân vị (90th, 95th Percentile).</text>
+
+    <!-- User Defined Variables Table -->
+    <text x="0" y="205" fill="#ffffff" font-size="14" font-weight="bold">User Defined Variables (Biến dùng chung):</text>
+    <rect x="0" y="220" width="610" height="26" fill="#3c3f41"/>
+    <text x="16" y="237" fill="#aaaaaa" font-size="11" font-weight="bold">NAME</text>
+    <text x="240" y="237" fill="#aaaaaa" font-size="11" font-weight="bold">VALUE</text>
+    <text x="440" y="237" fill="#aaaaaa" font-size="11" font-weight="bold">DESCRIPTION</text>
+
+    <rect x="0" y="246" width="610" height="32" fill="#313335" stroke="#3c3f41" stroke-width="0.5"/>
+    <text x="16" y="267" fill="#3498db" font-family="monospace" font-size="12">BASE_URL</text>
+    <text x="240" y="267" fill="#2ecc71" font-family="monospace" font-size="12">blazedemo.com</text>
+    <text x="440" y="267" fill="#888888" font-size="11">Tên miền hệ thống kiểm thử</text>
+
+    <rect x="0" y="278" width="610" height="32" fill="#2b2b2b" stroke="#3c3f41" stroke-width="0.5"/>
+    <text x="16" y="299" fill="#3498db" font-family="monospace" font-size="12">PROTOCOL</text>
+    <text x="240" y="299" fill="#2ecc71" font-family="monospace" font-size="12">https</text>
+    <text x="440" y="299" fill="#888888" font-size="11">Giao thức bảo mật SSL/TLS</text>
+
+    <!-- Component Checklist Box -->
+    <rect x="0" y="335" width="610" height="120" rx="4" fill="#232e27" stroke="#2ecc71" stroke-width="1"/>
+    <text x="16" y="360" fill="#2ecc71" font-size="13" font-weight="bold">✓ Các thành phần cấu hình chuẩn đã tích hợp:</text>
+    <text x="16" y="382" fill="#dddddd" font-size="11">✔ <tspan font-weight="bold">HTTP Cookie Manager</tspan>: Tự động duy trì phiên giao dịch (Session ID) giữa các bước đặt vé.</text>
+    <text x="16" y="402" fill="#dddddd" font-size="11">✔ <tspan font-weight="bold">CSV Data Set Config</tspan>: Nạp dữ liệu hành khách và thành phố bay tự động từ file CSV.</text>
+    <text x="16" y="422" fill="#dddddd" font-size="11">✔ <tspan font-weight="bold">Gaussian Think Time</tspan>: Mô phỏng thời gian người dùng thực dừng lại đọc thông tin (300ms - 500ms).</text>
+    <text x="16" y="442" fill="#dddddd" font-size="11">✔ <tspan font-weight="bold">Global Assertions</tspan>: Kiểm soát mã trạng thái HTTP 200 và giới hạn thời gian phản hồi &lt; 1500ms.</text>
+  </g>
+</svg>

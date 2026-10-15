@@ -1,0 +1,7 @@
+fromPort,toPort,passengerName,address,city,state,zipCode,cardType,creditCardNumber,nameOnCard
+Paris,Buenos Aires,Nguyen Van A,123 Le Loi Street,Ho Chi Minh,District 1,70000,visa,4111111111111111,Nguyen Van A
+Philadelphia,Rome,Tran Thi B,456 Nguyen Hue Ave,Da Nang,Hai Chau,55000,amex,378282246310005,Tran Thi B
+Boston,London,Le Van C,789 Tran Phu,Ha Noi,Ba Dinh,10000,mastercard,5555555555554444,Le Van C
+San Diego,Berlin,Pham Minh D,12 Hoang Hoa Tham,Can Tho,Ninh Kieu,90000,visa,4000000000000002,Pham Minh D
+Portland,Dublin,Hoang Thi E,34 Vo Thi Sau,Hai Phong,Hong Bang,18000,dinersclub,30569309025904,Hoang Thi E
+Mexico City,Cairo,Vu Tuan F,56 Nguyen Trai,Hue,Hue City,53000,visa,4222222222222,Vu Tuan F

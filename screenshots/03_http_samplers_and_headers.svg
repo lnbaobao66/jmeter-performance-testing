@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%" style="background:#2b2b2b; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Title Bar -->
+  <rect width="1000" height="38" fill="#3c3f41"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="19" r="6" fill="#27c93f"/>
+  <text x="85" y="24" fill="#bbbbbb" font-size="12" font-weight="bold">Apache JMeter 5.6.3 — HTTP Request Sampler: HTTP 02 - Reserve Flight</text>
+
+  <!-- Main Container -->
+  <g transform="translate(30, 55)">
+    <!-- Sampler Title -->
+    <rect width="940" height="42" rx="4" fill="#3c3f41" stroke="#4e5254" stroke-width="0.8"/>
+    <text x="20" y="27" fill="#1abc9c" font-size="15" font-weight="bold">🌐 HTTP Request Sampler: HTTP 02 - Reserve Flight (Search Flights)</text>
+
+    <!-- Web Server Configuration Box -->
+    <rect y="55" width="940" height="85" rx="4" fill="#313335" stroke="#4e5254" stroke-width="0.8"/>
+    <text x="20" y="78" fill="#ffffff" font-size="12" font-weight="bold">Web Server:</text>
+    
+    <text x="20" y="105" fill="#aaaaaa" font-size="11">Protocol [http/https]:</text>
+    <rect x="140" y="90" width="90" height="24" rx="2" fill="#2b2b2b" stroke="#3c3f41"/>
+    <text x="150" y="106" fill="#2ecc71" font-size="11" font-family="monospace">https</text>
+
+    <text x="250" y="105" fill="#aaaaaa" font-size="11">Server Name or IP:</text>
+    <rect x="370" y="90" width="280" height="24" rx="2" fill="#2b2b2b" stroke="#3c3f41"/>
+    <text x="380" y="106" fill="#3498db" font-size="11" font-family="monospace">${BASE_URL} (blazedemo.com)</text>
+
+    <text x="670" y="105" fill="#aaaaaa" font-size="11">Port Number:</text>
+    <rect x="750" y="90" width="60" height="24" rx="2" fill="#2b2b2b" stroke="#3c3f41"/>
+    <text x="765" y="106" fill="#cccccc" font-size="11" font-family="monospace">443</text>
+
+    <!-- HTTP Request Method and Path -->
+    <rect y="150" width="940" height="60" rx="4" fill="#313335" stroke="#4e5254" stroke-width="0.8"/>
+    <text x="20" y="172" fill="#ffffff" font-size="12" font-weight="bold">HTTP Request:</text>
+
+    <text x="20" y="195" fill="#aaaaaa" font-size="11">Method:</text>
+    <rect x="75" y="180" width="80" height="24" rx="2" fill="#2ecc71"/>
+    <text x="96" y="196" fill="#ffffff" font-size="11" font-weight="bold">POST</text>
+
+    <text x="175" y="195" fill="#aaaaaa" font-size="11">Path:</text>
+    <rect x="215" y="180" width="435" height="24" rx="2" fill="#2b2b2b" stroke="#3c3f41"/>
+    <text x="225" y="196" fill="#f1c40f" font-size="11" font-family="monospace">/reserve.php</text>
+
+    <text x="670" y="195" fill="#aaaaaa" font-size="11">Content Encoding:</text>
+    <rect x="775" y="180" width="75" height="24" rx="2" fill="#2b2b2b" stroke="#3c3f41"/>
+    <text x="790" y="196" fill="#cccccc" font-size="11">UTF-8</text>
+
+    <!-- Parameters Table -->
+    <rect y="220" width="940" height="185" rx="4" fill="#313335" stroke="#4e5254" stroke-width="0.8"/>
+    <text x="20" y="242" fill="#ffffff" font-size="12" font-weight="bold">Parameters (Dữ liệu form gửi lên máy chủ - Biến nạp từ CSV):</text>
+    
+    <!-- Table Header -->
+    <rect x="20" y="255" width="900" height="24" fill="#3c3f41"/>
+    <text x="35" y="271" fill="#aaaaaa" font-size="11" font-weight="bold">NAME</text>
+    <text x="250" y="271" fill="#aaaaaa" font-size="11" font-weight="bold">VALUE</text>
+    <text x="500" y="271" fill="#aaaaaa" font-size="11" font-weight="bold">ENCODE?</text>
+    <text x="600" y="271" fill="#aaaaaa" font-size="11" font-weight="bold">RESOLVED RUNTIME VALUE (DATA-DRIVEN)</text>
+
+    <!-- Row 1: fromPort -->
+    <rect x="20" y="280" width="900" height="30" fill="#2b2b2b" stroke="#3c3f41" stroke-width="0.5"/>
+    <text x="35" y="300" fill="#3498db" font-family="monospace" font-size="12">fromPort</text>
+    <text x="250" y="300" fill="#f1c40f" font-family="monospace" font-size="12">${fromPort}</text>
+    <text x="515" y="300" fill="#2ecc71" font-size="12">✓</text>
+    <text x="600" y="300" fill="#2ecc71" font-family="monospace" font-size="11">"Paris" (lấy tự động từ dòng 1 của flight_data.csv)</text>
+
+    <!-- Row 2: toPort -->
+    <rect x="20" y="311" width="900" height="30" fill="#313335" stroke="#3c3f41" stroke-width="0.5"/>
+    <text x="35" y="331" fill="#3498db" font-family="monospace" font-size="12">toPort</text>
+    <text x="250" y="331" fill="#f1c40f" font-family="monospace" font-size="12">${toPort}</text>
+    <text x="515" y="331" fill="#2ecc71" font-size="12">✓</text>
+    <text x="600" y="331" fill="#2ecc71" font-family="monospace" font-size="11">"Buenos Aires" (lấy tự động từ dòng 1 của flight_data.csv)</text>
+
+    <text x="20" y="380" fill="#888888" font-size="11">Ghi chú: Toàn bộ 50 người dùng sẽ tự động duyệt tuần tự qua các dòng dữ liệu khác nhau trong file CSV.</text>
+
+    <!-- Attached HTTP Header Manager Box -->
+    <g transform="translate(0, 415)">
+      <rect width="940" height="115" rx="4" fill="#232e27" stroke="#2ecc71" stroke-width="1"/>
+      <text x="20" y="26" fill="#2ecc71" font-size="13" font-weight="bold">📑 HTTP Header Manager đính kèm:</text>
+      <text x="20" y="48" fill="#dddddd" font-size="11">• <tspan fill="#3498db" font-family="monospace">User-Agent</tspan>: Mozilla/5.0 (Windows NT 10.0; Win64; x64) JMeter-Performance-Test/1.0</text>
+      <text x="20" y="68" fill="#dddddd" font-size="11">• <tspan fill="#3498db" font-family="monospace">Accept</tspan>: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</text>
+      <text x="20" y="88" fill="#dddddd" font-size="11">• <tspan fill="#3498db" font-family="monospace">Accept-Language</tspan>: en-US,en;q=0.5 (Mô phỏng trình duyệt người dùng chuẩn)</text>
+    </g>
+  </g>
+</svg>
